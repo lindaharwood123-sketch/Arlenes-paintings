@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arlene's Paintings - Original Artwork for Sale</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            background: #f5f5f5;
+            color: #333;
+        }
+        
+        .header {
+            background: white;
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+        
+        .contact {
+            font-size: 1.1em;
+            color: #555;
+        }
+        
+        .contact a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        
+        .contact a:hover {
+            text-decoration: underline;
+        }
+        
+        .gallery {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        
+        .painting {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .painting:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0,0,0,0.15);
+        }
+        
+        .painting img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+        
+        .painting-info {
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .painting-title {
+            font-size: 1.3em;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+        
+        .painting-price {
+            font-size: 1.5em;
+            color: #27ae60;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🎨 Arlene's Paintings</h1>
+        <div class="contact">
+            <p>📞 Phone: <a href="tel:+61412345678">0412 345 678</a></p>
+            <p>✉️ Email: <a href="mailto:arlene@example.com">arlene@example.com</a></p>
+        </div>
+    </div>
+    
+    <div class="gallery">
+        <!-- PAINTING 1 -->
+        <div class="painting">
+            <img src="painting1.jpg" alt="Sunset Over Ocean">
+            <div class="painting-info">
+                <div class="painting-title">Sunset Over Ocean</div>
+                <div class="painting-price">$450</div>
+            </div>
+        </div>
+        
+        <!-- PAINTING 2 -->
+        <div class="painting">
+            <img src="painting2.jpg" alt="Mountain Landscape">
+            <div class="painting-info">
+                <div class="painting-title">Mountain Landscape</div>
+                <div class="painting-price">$380</div>
+            </div>
+        </div>
+        
+        <!-- PAINTING 3 -->
+        <div class="painting">
+            <img src="painting3.jpg" alt="Abstract Expression">
+            <div class="painting-info">
+                <div class="painting-title">Abstract Expression</div>
+                <div class="painting-price">$520</div>
+            </div>
+        </div>
+        
+        <!-- ADD MORE PAINTINGS BY COPYING THE BLOCK ABOVE -->
+        <!-- Just copy from "PAINTING 1" comment to the closing </div> and change the details -->
+        
+    </div>
+</body>
+</html>
